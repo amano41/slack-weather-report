@@ -31,3 +31,15 @@ function main() {
   deleteTrigger();
   reportWeather(); // 実際に実行したい関数
 }
+
+
+function init() {
+
+  // トリガーをすべて削除する
+  ScriptApp.getProjectTriggers().forEach(function(trigger) {
+    ScriptApp.deleteTrigger(trigger);
+  })
+
+  // 「特定日時のトリガー」を追加するトリガーを作成する
+  ScriptApp.newTrigger("createTrigger").timeBased().everyDays(1).atHour(4).create()
+}
