@@ -5,3 +5,12 @@ Weather Report
 
 * WEBHOOK_URL
 * CITY_CODE
+
+## .clasp.json
+
+```
+{
+  "scriptId":"XXXXXXXX",
+  "rootDir":"src"
+}
+```
