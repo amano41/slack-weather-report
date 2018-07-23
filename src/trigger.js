@@ -1,4 +1,4 @@
-function setTrigger() {
+function createTrigger() {
 
   // 設定する時刻
   var hours   = 6;
